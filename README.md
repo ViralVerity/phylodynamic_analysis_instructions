@@ -1,10 +1,10 @@
-README
+#README
 
 Running discrete phylogeographies on large datasets
 
 Link to full SOP: https://docs.google.com/document/d/1mTwKrQ6UCP75_5ncyiS2RjE4tdn5LJOTCve_cbH0j7c/edit#
 
-Short version:
+## Short version:
 
 1. Get ML topology with IQTree
 iqtree -fast -m hky -s alignment.fasta -nt AUTO -o outgroup.taxon -czb
