@@ -1,4 +1,4 @@
-#README
+# README
 
 Running discrete phylogeographies on large datasets
 
