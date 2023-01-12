@@ -160,9 +160,7 @@
 			<column label="Likelihood" dp="4" width="12">
 				<likelihood idref="likelihood"/>
 			</column>
-			<column label="age(root)" sf="6" width="12">
-				<tmrcaStatistic idref="age(root)"/>
-			</column>
+			
 			<column label="location.clock.rate" sf="6" width="12">
 				<parameter idref="location.clock.rate"/>
 			</column>
@@ -193,7 +191,6 @@
 
 			<!-- END Discrete Traits Model                                               -->
 
-			<gmrfSkyGridLikelihood idref="skygrid"/>
 		</log>
 
 		<!-- START Discrete Traits Model                                             -->
