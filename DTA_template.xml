@@ -27,7 +27,7 @@
 <!-- general data type for discrete trait model, "district"                  -->
     <generalDataType id="location.dataType">
 
-    <!-- Number Of States = 11                                                  -->
+    <!-- Number Of States = XX                                                  -->
         <state code="XX"/>
        
 
@@ -61,14 +61,16 @@
 			<frequencyModel id="location.frequencyModel" normalize="true">
 				<generalDataType idref="location.dataType"/>
 				<frequencies>
-					<parameter id="location.frequencies" dimension="11"/>
+					<parameter id="location.frequencies" dimension="XX"/>
+					<!-- XX = the number of states you have -->
 				</frequencies>
 			</frequencyModel>
 		</frequencies>
 
 		<!-- rates and indicators                                                    -->
 		<rates>
-			<parameter id="location.rates" dimension="22" value="1.0" lower="0.0"/>
+			<parameter id="location.rates" dimension="XX" value="1.0" lower="0.0"/>
+			<!-- XX = (N*N)-N where N is the number of states -->
 		</rates>
 	</generalSubstitutionModel>
 	<siteModel id="location.siteModel">
@@ -137,7 +139,6 @@
 				<strictClockBranchRates idref="location.branchRates"/>
 			</prior>
 			<likelihood id="likelihood">
-				<treeDataLikelihood idref="default.treeLikelihood"/>
 
 				<!-- START Discrete Traits Model                                             -->
 				<ancestralTreeLikelihood idref="location.treeLikelihood"/>
