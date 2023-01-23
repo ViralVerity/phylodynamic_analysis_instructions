@@ -25,7 +25,7 @@ Use thorney_beast.xml as a template
 
 3b. Grab last tree from that file
 
-X = 2n+9 where n is the number of taxa
+X = 2n+9 where n is the number of taxa BUT I recommmend checking it - it seems that it varies a bit
 
 [on Command line]
 
