@@ -4,6 +4,8 @@ Running discrete phylogeographies on large datasets
 
 Link to full SOP: https://docs.google.com/document/d/1mTwKrQ6UCP75_5ncyiS2RjE4tdn5LJOTCve_cbH0j7c/edit#
 
+Credit for thorney beast method: Dr JT McCrone
+
 ## Short version:
 
 1. Get ML topology with IQTree
