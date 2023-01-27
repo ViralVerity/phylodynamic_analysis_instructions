@@ -1,1 +1,1 @@
-java -cp beast.jar dr.app.tools.TreeMarkovJumpHistoryAnalyzer -h 
+java -cp beast.jar dr.app.tools.TreeMarkovJumpHistoryAnalyzer <trees_file> <output_file_name> 
