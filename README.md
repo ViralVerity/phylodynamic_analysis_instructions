@@ -4,6 +4,8 @@ Running discrete phylogeographies on large datasets
 
 Link to full SOP: https://docs.google.com/document/d/1mTwKrQ6UCP75_5ncyiS2RjE4tdn5LJOTCve_cbH0j7c/edit#
 
+Credit for thorney beast method: Dr JT McCrone
+
 ## Short version:
 
 1. Get ML topology with IQTree
@@ -25,7 +27,7 @@ Use thorney_beast.xml as a template
 
 3b. Grab last tree from that file
 
-X = 2n+9 where n is the number of taxa
+X = 2n+9 where n is the number of taxa BUT I recommmend checking it - it seems that it varies a bit
 
 [on Command line]
 
