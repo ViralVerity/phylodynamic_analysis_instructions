@@ -218,7 +218,19 @@
 			<!-- END Ancestral state reconstruction                                      -->
 
 		</logTree>
+		
+		
+		<!-- write complete history tree log to file                                 -->
+		<logTree logEvery="10000" nexusFormat="true" fileName="DTA.state.history.trees" sortTranslationTable="true">
+			<treeModel idref="treeModel"/>
+			<markovJumpsTreeLikelihood idref="state.treeLikelihood"/>
+		</logTree>
+
+		<!-- END Ancestral state reconstruction                                      -->
+		
 	</mcmc>
+	
+	
 	
 	<report>
 		<property name="timer">
