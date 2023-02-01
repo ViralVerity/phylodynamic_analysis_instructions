@@ -96,7 +96,28 @@
 			</frequencies>
 		</frequencyModel>
 	</ancestralTreeLikelihood>
+	
+	<markovJumpsTreeLikelihood id="location.mj.treeLikelihood" stateTagName="location.states" useUniformization="true" saveCompleteHistory="true" logCompleteHistory="true">
+		<attributePatterns idref="location.pattern"/>
+		<treeModel idref="treeModel"/>
+		<siteModel idref="location.siteModel"/>
+		<strictClockBranchRates idref="location.branchRates"/>
+		
+		<!-- The root state frequencies                                              -->
+		<frequencyModel id="state.root.frequencyModel" normalize="true">
+			<generalDataType idref="state.dataType"/>
+			<frequencies>
+				<parameter id="state.root.frequencies" dimension="DIMENSIONS OF STATES">
+			</frequencies>
+		</frequencyModel>
 
+		<!-- START Ancestral state reconstruction                                    -->
+		<parameter id="state.count" value=""/>
+
+
+		<!-- END Ancestral state reconstruction                                      -->
+
+	</markovJumpsTreeLikelihood>
 	<!-- END Discrete Traits Model                                               -->
 
 
@@ -221,9 +242,9 @@
 		
 		
 		<!-- write complete history tree log to file                                 -->
-		<logTree logEvery="10000" nexusFormat="true" fileName="DTA.state.history.trees" sortTranslationTable="true">
+		<logTree logEvery="10000" nexusFormat="true" fileName="DTA.location.history.trees" sortTranslationTable="true">
 			<treeModel idref="treeModel"/>
-			<markovJumpsTreeLikelihood idref="state.treeLikelihood"/>
+			<markovJumpsTreeLikelihood idref="location.mj.treeLikelihood"/>
 		</logTree>
 
 		<!-- END Ancestral state reconstruction                                      -->
