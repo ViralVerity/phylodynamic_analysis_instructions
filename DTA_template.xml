@@ -103,6 +103,7 @@
 		<siteModel idref="location.siteModel"/>
 		<strictClockBranchRates idref="location.branchRates"/>
 		
+		<!-- remove root state frequencies if performing a GLM -->
 		<!-- The root state frequencies                                              -->
 		<frequencyModel id="state.root.frequencyModel" normalize="true">
 			<generalDataType idref="state.dataType"/>
@@ -111,6 +112,7 @@
 			</frequencies>
 		</frequencyModel>
 
+		<!-- NxN matrix where N = number of states, 0.0 along the diagonal -->
 		<!-- START Ancestral state reconstruction                                    -->
 		<parameter id="state.count" value=""/>
 
